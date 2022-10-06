@@ -6,8 +6,9 @@
   "name": "Eldermade",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "criosage",
-    "chrisshiss"
+      "criosage",
+      "chrisshiss",
+      "Zandrenel"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
