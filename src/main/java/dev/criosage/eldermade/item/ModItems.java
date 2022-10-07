@@ -9,7 +9,7 @@ import net.minecraft.util.registry.Registry;
 	
 public class ModItems {
 
-    public static final Item BREAD = registerItem("bread",
+    public static final Item OAK_SHINGLES = registerItem("oak_shingles",
 							 new Item(new FabricItemSettings().group(ModItemGroup.ELDERMADE)));
     
 
