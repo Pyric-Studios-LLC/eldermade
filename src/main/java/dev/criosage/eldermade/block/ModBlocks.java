@@ -5,12 +5,15 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import dev.criosage.eldermade.Eldermade;
 import dev.criosage.eldermade.item.ModItemGroup;
 import net.minecraft.block.Block;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+
+import net.criosage.eldermade.block.ModStairsBlock;
 
 
 public class ModBlocks {
@@ -34,15 +37,23 @@ public class ModBlocks {
 
     
     public static final Block SPRUCE_SHINGLES_SLAB = registerBlock("spruce_shingles_slab",
-							      new Block(FabricBlockSettings.
-									of(Material.WOOD).
-									strength(2f)),
-							      ModItemGroup.ELDERMADE);
+								   new SlabBlock(FabricBlockSettings.
+									     of(Material.WOOD).
+									     strength(2f)),
+								   ModItemGroup.ELDERMADE);
     
     
     /**
      * Spruce Shingles stairs
      */
+
+    public static final Block SPRUCE_SHINGLES_STAIR = registerBlock("spruce_shingles_stair",
+								   new ModStairsBlock(
+										      ModBlocks.SPRUCE_SHINGLES.getDefaultState(),
+										      FabricBlockSettings.
+									     of(Material.WOOD).
+									     strength(2f)),
+								   ModItemGroup.ELDERMADE);
 
     
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
