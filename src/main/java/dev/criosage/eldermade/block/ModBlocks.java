@@ -15,11 +15,35 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
+
+
+    /**
+     * Spruce Shingles
+     */
+
     public static final Block SPRUCE_SHINGLES = registerBlock("spruce_shingles",
+							      new Block(FabricBlockSettings.
+									of(Material.WOOD).
+									strength(2f)
+									),
+							      ModItemGroup.ELDERMADE);
+
+    /**
+     * Spruce Shingles slabs
+     */
+
+    
+    public static final Block SPRUCE_SHINGLES_SLAB = registerBlock("spruce_shingles_slab",
 							      new Block(FabricBlockSettings.
 									of(Material.WOOD).
 									strength(2f)),
 							      ModItemGroup.ELDERMADE);
+    
+    
+    /**
+     * Spruce Shingles stairs
+     */
+
     
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
 	registerBlockItem(name, block, tab);
