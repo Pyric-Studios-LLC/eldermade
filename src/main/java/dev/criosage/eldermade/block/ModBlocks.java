@@ -20,10 +20,7 @@ public class ModBlocks {
 
 
 
-    /**
-     * Spruce Shingles
-     */
-
+    /* Spruce Shingles */
     public static final Block SPRUCE_SHINGLES = registerBlock("spruce_shingles",
 							      new Block(FabricBlockSettings.
 									of(Material.WOOD).
@@ -31,11 +28,7 @@ public class ModBlocks {
 									),
 							      ModItemGroup.ELDERMADE);
 
-    /**
-     * Spruce Shingles slabs
-     */
-
-    
+    /* Spruce Shingles slabs */    
     public static final Block SPRUCE_SHINGLES_SLAB = registerBlock("spruce_shingles_slab",
 								   new SlabBlock(FabricBlockSettings.
 									     of(Material.WOOD).
@@ -43,11 +36,8 @@ public class ModBlocks {
 								   ModItemGroup.ELDERMADE);
     
     
-    /**
-     * Spruce Shingles stairs
-     */
-
-    public static final Block SPRUCE_SHINGLES_STAIR = registerBlock("spruce_shingles_stair",
+    /* Spruce Shingles stairs */
+    public static final Block SPRUCE_SHINGLES_STAIRS = registerBlock("spruce_shingles_stairs",
 								   new ModStairsBlock(
 										      ModBlocks.SPRUCE_SHINGLES.getDefaultState(),
 										      FabricBlockSettings.
@@ -55,6 +45,56 @@ public class ModBlocks {
 									     strength(2f)),
 								   ModItemGroup.ELDERMADE);
 
+    /* Oak Shingles */
+    public static final Block OAK_SHINGLES = registerBlock("oak_shingles",
+							      new Block(FabricBlockSettings.
+									of(Material.WOOD).
+									strength(2f)
+									),
+							      ModItemGroup.ELDERMADE);
+
+    /* Oak Shingles slabs */    
+    public static final Block OAK_SHINGLES_SLAB = registerBlock("oak_shingles_slab",
+								   new SlabBlock(FabricBlockSettings.
+									     of(Material.WOOD).
+									     strength(2f)),
+								   ModItemGroup.ELDERMADE);
+    
+    
+    /* Oak Shingles stairs */
+    public static final Block OAK_SHINGLES_STAIRS = registerBlock("oak_shingles_stairs",
+								  new ModStairsBlock(
+										     ModBlocks.OAK_SHINGLES.getDefaultState(),
+										     FabricBlockSettings.
+										     of(Material.WOOD).
+										     strength(2f)),
+								  ModItemGroup.ELDERMADE);
+    /* Tatch  */
+    public static final Block THATCH = registerBlock("thatch",
+						    new Block(FabricBlockSettings.
+							      of(Material.WOOD).
+							      strength(2f)
+							      ),
+						    ModItemGroup.ELDERMADE);
+
+    /* Thatch Shingles slabs */    
+    public static final Block THATCH_SLAB = registerBlock("thatch_slab",
+							  new SlabBlock(FabricBlockSettings.
+									of(Material.WOOD).
+									strength(2f)),
+							  ModItemGroup.ELDERMADE);
+
+    /* Tatch stairs */
+    public static final Block THATCH_STAIRS = registerBlock("thatch_stairs",
+							   new ModStairsBlock(
+									      ModBlocks.THATCH.getDefaultState(),
+									      FabricBlockSettings.
+									      of(Material.WOOD).
+									      strength(2f)),
+							   ModItemGroup.ELDERMADE);
+
+    
+    
     
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
 	registerBlockItem(name, block, tab);

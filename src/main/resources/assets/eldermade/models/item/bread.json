@@ -1,6 +1,6 @@
 {
     "parent":"item/generated",
     "textures":{
-	"layer0":"eldermade:item/oak_shingles"
+	"layer0":"eldermade:item/bread"
     }
 }

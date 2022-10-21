@@ -13,6 +13,6 @@ public class ModItemGroup {
     public static final ItemGroup ELDERMADE = FabricItemGroupBuilder.
 	build(new Identifier(Eldermade.MOD_ID,
 			     "eldermade"),
-	      () -> new ItemStack(ModItems.OAK_SHINGLES));
+	      () -> new ItemStack(ModItems.BREAD));
     
 }
