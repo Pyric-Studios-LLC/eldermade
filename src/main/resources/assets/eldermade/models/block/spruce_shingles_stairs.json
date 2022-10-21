@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "eldermade:block/spruce_shingles",
+    "top": "eldermade:block/spruce_shingles",
+    "side": "eldermade:block/spruce_shingles"
+  }
+}

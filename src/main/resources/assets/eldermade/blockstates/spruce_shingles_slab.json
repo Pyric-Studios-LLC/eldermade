@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "eldermade:block/spruce_shingles_slab"
+    },
+    "type=double": {
+      "model": "eldermade:block/spruce_shingles_block"
+    },
+    "type=top": {
+      "model": "eldermade:block/spruce_shingles_slab_top"
+    }
+  }
+}
